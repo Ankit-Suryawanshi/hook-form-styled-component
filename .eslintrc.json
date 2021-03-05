@@ -1,0 +1,36 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"airbnb",
+		"eslint:recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"semi": ["warn", "always"],
+		"quotes": ["warn", "double"],
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [2, {"extensions": [".js", ".jsx"]}],
+		"react/jsx-one-expression-per-line": "warn",
+		"comma-dangle": "warn",
+		"arrow-parens": "warn",
+		"object-curly-newline": "warn",
+		"no-console": 1,
+		"no-tabs": 0,
+		"jsx-a11y/label-has-associated-control": "off",
+		"jsx-a11y/label-has-for":"off",
+		"prefer-destructuring": "off"
+	}
+}
